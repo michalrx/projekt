@@ -1,0 +1,142 @@
+body
+{
+    margin: 0;
+}
+
+a:hover
+{
+    color: red;
+}
+
+/*
+h1:before
+{
+    content: '+';
+    color: green;
+}
+*/
+
+input
+{
+    display: block;
+    margin-bottom: 10px;
+}
+
+textarea:placeholder-shown
+{
+    padding-left: 50px;
+}
+
+header
+{
+    width: 100%;
+    height: 180px;
+    background-color: #05606c;
+}
+    header nav
+    {
+        margin: 40px 50px 40px 0;
+        float: right;
+        height: 100px;
+    }
+    header img
+    {
+        margin: 40px 0 40px 50px;
+        float: left;
+        width: auto;
+        height: 100px;
+    }
+    header nav ul, ul li
+    {
+        display: block;
+        list-style: none;
+        margin: 0;
+        padding: 10px;
+    }
+
+    header nav ul li
+    {
+        display: inline;
+        white-space: nowrap;
+    }
+    header nav ul li a
+    {
+        text-decoration: none;
+        color: #FFF;
+    }
+    header nav ul li a:hover
+    {
+        text-decoration: none;
+    }
+    header nav ul li:first-child a
+    {
+        text-decoration: underline;
+    }
+    header nav ul li::before
+    {
+        content: '\26F7';
+        color: gold;
+
+    }
+
+main
+{
+    width: 60%;
+    height: auto;
+    float: left;
+    background-color: #dee5ee;
+}
+
+    main article
+    {
+        padding: 10px;
+        border-radius: 20px;
+        border-color: #FEFEFE;
+        border-style: solid;
+        margin: 10px;
+        background-color: #FEFEFE;
+    }
+
+/*    main article:first-child h1:first-child
+    {
+        color: blue;
+    }
+
+    main article:nth-child(2)
+    {
+        background: aliceblue;
+    }
+
+    main article:last-child h1
+    {
+        font-size: 30px;
+    }
+*/
+
+aside
+{
+    width: 40%;
+    height: auto;
+    min-height: 800px;
+    float: right;
+    background-color: #DEE5EE;
+}
+    aside article
+    {
+        padding: 10px;
+        border-radius: 10px;
+        border-color: #FEFEFE;
+        border-style: solid;
+        margin: 10px;
+        background-color: #FEFEFE;
+    }
+
+footer
+{
+    width: 100%;
+    height: 200px;
+    background-color: #1A1E1C;
+    margin: auto 0;
+    clear: both;
+    bottom: 0
+}
