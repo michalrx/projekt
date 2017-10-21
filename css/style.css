@@ -22,9 +22,26 @@ input
     margin-bottom: 10px;
 }
 
+input[type=radio]
+{
+    display: inline;
+    margin-bottom: 5px;
+}
+
 textarea:placeholder-shown
 {
     padding-left: 50px;
+}
+
+textarea
+{
+    display:block;
+    marigin-bottom: 10px;
+}
+
+select
+{
+    margin-bottom: 10px;
 }
 
 header
@@ -117,7 +134,7 @@ aside
 {
     width: 40%;
     height: auto;
-    min-height: 800px;
+    min-height: 850px;
     float: right;
     background-color: #DEE5EE;
 }

@@ -33,8 +33,24 @@
                 <label>Data:</label><input name="" type="date">
                 <label>Numer:</label><input name="" type="number">
                 <label>File:</label><input name="" type="file">
+
                 <label>Pole tekstowe:</label><br />
                 <textarea name="" type="" rows="10" cols="50" placeholder="Tekst"></textarea>
+
+                <label>wybierz:</label><br />
+                <select name="">
+                    <option value="w1">wartosc pierwsza</option>
+                    <option value="w2">wartosc druga</option>
+                </select><br />
+
+                <label>Przeglądarka</label><input list="browsers" name="browser">
+                    <datalist id="browsers">
+                        <option value="Firefox"></option>
+                        <option value="Chrome"></option>
+                    </datalist>
+
+                <label>Male</label><input type="radio" name="gender" value="male" checked><br />
+                <label>Female</label><input type="radio" name="gender" value="female">
 
                 <input name="wyslij" type="submit" value="Wyślij formularz">
                 <input name="wyczysc" type="reset" value="Wyczyść">
