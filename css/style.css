@@ -2,7 +2,7 @@ html, body
 {
     margin: 0;
     height: 100%;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 a:hover
@@ -73,6 +73,7 @@ header
         margin: 40px 50px 40px 0;
         float: right;
         height: 100px;
+        font-family: 'Oswald', sans-serif;
     }
     header img
     {
@@ -138,11 +139,6 @@ header
     display: flex;
     align-items: stretch;
     min-height: 100%;
-}
-
-article
-{
-    font-family: 'Roboto Condensed', sans-serif;
 }
 
 main
