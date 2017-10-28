@@ -2,20 +2,13 @@ html, body
 {
     margin: 0;
     height: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 a:hover
 {
-    color: red;
+    text-decoration: none;
 }
-
-/*
-h1:before
-{
-    content: '+';
-    color: green;
-}
-*/
 
 input
 {
@@ -29,30 +22,25 @@ input[type=radio]
     margin-bottom: 5px;
 }
 
-/* input:invalid + label::after
+/*input:required + label::after
 {
-    content: '-';
-}
+    content: '*';
+}*/
 
-input:valid + label::after
-{
-    content: '+';
-}
-*/
-input:required + label::after
+.required::after
 {
     content: '*';
 }
 
 textarea:placeholder-shown
 {
-    padding-left: 50px;
+    /*padding-left: 50px;*/
 }
 
 textarea
 {
     display:block;
-    marigin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 select
@@ -64,7 +52,7 @@ header
 {
     width: 100%;
     height: 180px;
-    background-color: #05606c;
+    background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
 }
     header nav
@@ -72,6 +60,7 @@ header
         margin: 40px 50px 40px 0;
         float: right;
         height: 100px;
+        font-family: 'Oswald', sans-serif;
     }
     header img
     {
@@ -85,7 +74,7 @@ header
         display: block;
         list-style: none;
         margin: 0;
-        padding: 10px;
+        padding: 25px 18px 0 0;
     }
 
     header nav ul li
@@ -93,87 +82,144 @@ header
         display: inline;
         white-space: nowrap;
     }
-    header nav ul li a
+    header nav ul li:hover
     {
         text-decoration: none;
+    }
+    header nav ul li a
+    {
+        display: inline-block;
+        text-decoration: none;
         color: #FFF;
+        font-size: 18px;
+        text-transform: uppercase;
+        text-align: center;
     }
     header nav ul li a:hover
     {
         text-decoration: none;
+        font-weight: 800;
     }
-    header nav ul li:first-child a
+    header nav ul li a::after
     {
-        text-decoration: underline;
+        display:block;
+        content:attr(title);
+        font-weight:bold;
+        height:1px;
+        color:transparent;
+        overflow:hidden;
+        visibility:hidden;
     }
-    header nav ul li::before
-    {
-        content: '\26F7';
-        color: gold;
 
-    }
+.zajawka
+{
+    display: flex;
+}
+
+.zajawka img
+{
+    /*margin-top: 180px;*/
+    width: 100%;
+    height: 100%;
+}
 
 .tresc
 {
     display: flex;
     align-items: stretch;
-    min-height: 100%;
 }
+
+.about_me
+{
+    display: flex;
+    align-items: center;
+    background-color: #212121;
+}
+
+    .about_me_photo
+    {
+        flex: 1;
+        padding: 10px;
+        border-radius: 20px;
+        border-color: #EFEDED;
+        border-style: solid;
+        margin: 10px;
+        background-color: #EFEDED;
+    }
+
+    .about_me_description
+    {
+        flex: 3;
+        padding: 10px;
+        border-radius: 20px;
+        border-color: #EFEDED;
+        border-style: solid;
+        margin: 10px;
+        background-color: #EFEDED;
+    }
+
+.gallery
+{
+    display: flex;
+    background-color: #212121;
+}
+
+    .gallery_tresc
+    {
+        flex: 1;
+        padding: 10px;
+        border-radius: 20px;
+        border-color: #EFEDED;
+        border-style: solid;
+        margin: 10px;
+        background-color: #EFEDED;
+    }
+
+    .gallery img
+    {
+        max-height: 150px;
+        max-width: 200px;
+    }
 
 main
 {
     flex: 2;
-    background-color: #dee5ee;
-    margin-top: 180px;
+    background-color: #212121;
+    /*margin-top: 180px;*/
 }
 
     main article
     {
         padding: 10px;
         border-radius: 20px;
-        border-color: #FEFEFE;
+        border-color: #EFEDED;
         border-style: solid;
         margin: 10px;
-        background-color: #FEFEFE;
+        background-color: #EFEDED;
     }
-
-/*    main article:first-child h1:first-child
-    {
-        color: blue;
-    }
-
-    main article:nth-child(2)
-    {
-        background: aliceblue;
-    }
-
-    main article:last-child h1
-    {
-        font-size: 30px;
-    }
-*/
 
 aside
 {
     flex: 1;
-    background-color: #DEE5EE;
-    margin-top: 180px;
+    background-color: #212121;
 }
     aside article
     {
         padding: 10px;
         border-radius: 10px;
-        border-color: #FEFEFE;
+        border-color: #efeded;
         border-style: solid;
         margin: 10px;
-        background-color: #FEFEFE;
+        background-color: #EFEDED;
     }
 
 footer
 {
+    text-align: center;
+    color: #fff;
     width: 100%;
     height: 100px;
-    background-color: #1A1E1C;
+    background-color: #580002;
     margin: 0 auto;
     clear: both;
     bottom: 0;

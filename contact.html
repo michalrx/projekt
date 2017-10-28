@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt | Michał Roguski | strona projektowa</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <img src="images/logo.png">
+    <nav>
+        <ul>
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="about_me.html">O mnie</a></li>
+            <li><a href="gallery.html">Galeria</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="zajawka">
+    <img src="images/header.jpg">
+</div>
+<div class="tresc">
+    <main>
+       <article>
+            <h1>Kontakt</h1>
+            <p>Skontaktuj się ze mną!</p>
+            <p>
+                <form action="" method="">
+                    <label class="required">Imię:</label><input name="imie" type="text" placeholder="Twoje imię" required>
+                    <label class="required">E-mail:</label><input name="email" type="email" placeholder="Twój adres e-mail" required>
+                    <label>Telefon:</label><input name="telefon" type="tel" placeholder="Twój nr telefonu">
+
+                   <label>Forma kontaktu:</label><br />
+                   <select name="forma_kontaktu">
+                       <option value="email">e-mail</option>
+                       <option value="telefon">telefon</option>
+                   </select><br />
+
+                    <label class="required">Treść wiadomości:</label><br />
+                    <textarea name="" type="" rows="10" cols="50" placeholder="Treść wiadomości" required></textarea>
+
+                    Preferowana godzina kontaktu:<br />
+                    <label>9-13</label><input type="radio" name="godzina_kontaktu" value="9_13" checked>
+                    <label>13-17</label><input type="radio" name="godzina_kontaktu" value="13_17">
+                    <label>17-21</label><input type="radio" name="godzina_kontaktu" value="17_21">
+
+                    <input name="wyslij" type="submit" value="Wyślij formularz">
+                    <input name="wyczysc" type="reset" value="Wyczyść">
+                </form>
+            </p>
+       </article>
+    </main>
+</div>
+<footer>
+    &copy; 2017 Michał Roguski
+</footer>
+
+</body>
+</html>
